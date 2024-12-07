@@ -1,0 +1,443 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Top Songs</title>
+    <style>
+        body {
+            min-height: 100vh;
+            background-image: url(img/bg-img.png);
+            background-size: cover;
+            background-position: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        header{
+            background-size: cover;
+            background-position: center;
+        }
+        nav {
+            background: url(img/bg-img.png);
+        }
+        #mobile-menu {
+            background-color: rgba(42, 42, 42);
+            background-color: rgba(42, 42, 42, 0.9);
+        }
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        .brand-logo {
+            font-weight: bold;
+            text-shadow: 5px, 5px;
+        }
+        marquee {
+            font-size: 30px;
+            color: white;
+            background-color: rgba(42, 42, 42);
+            background-color: rgba(42, 42, 42, 0.2);
+        }
+        .tanginerls {
+            font-weight: bold;
+        }
+        .fucker{
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .bitch {
+            font-size: 20px;
+            text-align: justify;
+            margin: 20;
+            text-indent: 50px;
+        }
+        .shit {
+            border-radius: 10px;
+        }
+        .umay {
+            margin-left: 30px;
+        }
+        .damn {
+            border-radius: 20px;
+            background-color: rgba(42, 42, 42);
+            background-color: rgba(42, 42, 42, 0.4);
+        }
+        .kofal {
+            color: white;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .shuta {
+            font-size: 20px;
+        }
+        span {
+            color: white;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        @media screen and (max-width: 1150px){
+            marquee {
+                font-size: 20px;
+            }
+            .bitch {
+                font-size: 18px;
+            }
+            h1 {
+                font-size: 50px;
+            }
+            h3 {
+                font-size: 30px;
+            }
+            h2 {
+                font-size: 30px;
+            }
+            h4 {
+                font-size: 30px;
+            }
+            h5 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 18px;
+            }
+            .footer-h5 {
+                font-size: 15px;
+            }
+            .footer-p {
+                font-size: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="home.html" class="brand-logo white-text">Bitch Perfect</a>
+                <a href="#" class="sidenav-trigger white-text" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down white-text">
+                    <li><a href="home.html" class="white-text">Home</a></li>
+                    <li><a href="about-us.html" class="white-text">About Us</a></li>
+                    <li><a href="top-singers.html" class="white-text">Top Singers</a></li>
+                    <li><a href="https://www.facebook.com/aronlaynes.ferriol" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li><a href="https://open.spotify.com/user/312f33ga5maexoimg3x6haeajemy?si=9a040c9b63f44aa5" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is Spotify" target="_blank">
+                        <i class="fab fa-spotify"></i>
+                    </a></li>
+                    <li><a href="https://www.youtube.com/feed/you" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/aronlaynesferriol/?hl=fi" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                </ul>
+                <ul class="sidenav transparent white-text" id="mobile-menu">
+                    <li class="center-align"><span>Menu</span></li>
+                    <li><a href="home.html" class="white-text">Home</a></li>
+                    <li><a href="about-us.html" class="white-text">About Us</a></li>
+                    <li><a href="top-singers.html" class="white-text">Top Singers</a></li>
+                    <li class="center-align"><span>Contacts</span></li>
+                    <li><a href="https://www.facebook.com/aronlaynes.ferriol" class="white-text">Facebook</a></li>
+                    <li><a href="https://open.spotify.com/user/312f33ga5maexoimg3x6haeajemy?si=9a040c9b63f44aa5" class="white-text">Spotify</a></li>
+                    <li><a href="https://www.youtube.com/feed/you" class="white-text">YouTube</a></li>
+                    <li><a href="https://www.instagram.com/aronlaynesferriol/?hl=fi" class="white-text">Instagram</a></li>
+                </ul>
+            </div>
+        </nav>
+        <img src="img/banner.png" alt="" class="responsive-img">
+    </header>
+
+    <marquee behavior="" direction="">
+        Hey fuckers, welcome to <strong>Bitch Perfect</strong>. The only site that provides latest, trending, and hit songs in 2024. This is the perfect site for a bitch like you to listen music to.
+    </marquee>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="container section center white-text damn">
+        <div>
+            <h1 class="bold">
+                Top Songs
+            </h1>
+            <p class="bitch">Music has an incredible ability to connect with us on a deeply personal level, and top songs often serve as the soundtrack to our lives. These tracks, whether they come from chart-topping hits or underground sensations, have a way of capturing moments, emotions, and memories. From the thumping beats that get us dancing to the poignant lyrics that touch our souls, top songs define eras and set the tone for the cultural zeitgeist.</p>
+            <p class="bitch">Throughout the years, the music industry has seen a myriad of genres and artists rise to fame, each bringing their unique sound and perspective. Pop, rock, hip hop, and more have all had their time in the spotlight, with artists like Taylor Swift, The Beatles, and Kendrick Lamar leaving indelible marks on the musical landscape. Today's top songs often blend influences from various genres, reflecting a more global and interconnected world. This fusion creates a rich and diverse listening experience that caters to a wide range of tastes and preferences.</p>
+            <p class="bitch">Exploring the latest top songs not only introduces us to the current trends in music but also highlights the ever-evolving nature of the industry. New technologies, social media, and streaming platforms have revolutionized how we discover, share, and enjoy music. As we delve into the top songs of today, we can appreciate the innovative ways artists continue to push boundaries and reinvent their craft, ensuring that music remains a timeless and universal form of expression.</p>
+            <br>
+            <p class="bitch">The top songs for 2024 were meticulously selected through a combination of multiple criteria to ensure a well-rounded and representative list. This process involved analyzing streaming data, chart performance, and radio airplay to gauge the popularity and reach of each track. In addition to these metrics, the opinions of music critics and industry experts were considered to highlight the artistic and cultural impact of the songs.</p>
+            <p class="bitch">Furthermore, fan engagement and social media buzz played a crucial role in the selection, reflecting the songs that have resonated most with listeners around the globe. By combining these various elements, the top songs for 2024 represent a diverse mix of genres and styles, capturing the musical zeitgeist of the year and showcasing the artists who have made a significant mark on the industry.</p>
+        </div>
+        <br>
+        <h3 class="bold">
+            Top 20 Songs of 2024 &bull; Global
+        </h3>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2HRqTpkrJO5ggZyyK6NPWz?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3xkHsmpQCBMytMJNiDf3Ii?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6dOtVTDdiauQNBQEDOtlAB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2esZG2XFtuoWWA9AfDvSxy?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/17phhZDn6oGtzMe56NuWvj?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container"
+        ><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3qhlB30KknSejmIvZZLjOD?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/19XpFsce28aByvCC4g89tJ?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7CyPwkp0oE8Ro9Dd5CUDjW?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1BxfuPKGuaTgP7aM0Bbdwr?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2plbrEY59IikOBgBGLjaoe?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3JG1uFc40wfyrqaWC7iv0e?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/51ZQ1vr10ffzbwIjDCwqm4?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2tHwzyyOLoWSFqYNjeVMzj?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0WbMK4wrZ1wFSty9F7FCgu?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3rUGC1vUpkDG9CZFHMur1t?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5AJ9hqTS2wcFQCELCFRO7A?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7tI8dRuH2Yc6RuoTjxo4dU?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5fZJQrFKWQLb7FpJXZ1g7K?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7bywjHOc0wSjGGbj04XbVi?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6AI3ezQ4o3HUoP6Dhudph3?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section class="container section scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5 shuta">
+                <h2 class="white-text bold">Get in Touch</h2>
+                <p>We're always excited to hear from our users. Whether you have a song request, feedback, or just want to chat, feel free to reach out to us through our social media channels or by emailing us at <a href="mailto:empferriolabm@gmail.com" class="kofal">empferriolabm@gmail.com</a>. You can also leave a comment on our website or join our online community forum. We're committed to providing the best possible experience for our users, and your feedback is invaluable to us.</p>
+                <br>
+                <h2 class="white-text bold">Check Out My Playlist</h2>
+                <p>🎶 Discover the Soundtrack to Your Life! 🎶</p>
+                <p>Dive into a world of rhythm and melody with our specially curated <a href="my-playlist.html" class="kofal">playlist</a>. Whether you're looking for the perfect tunes to boost your mood, get you through a workout, or unwind after a long day, we've got you covered. Each track is handpicked to create an unforgettable listening experience that speaks to the heart and soul. Don't just listen to music—feel it, live it, and let it transform your moments. Hit play and let the music take you on a journey like never before!</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email">
+                    <label for="email" class="white-text">Your Email</label> 
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                    <label for="message" class="white-text">Your Message</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">date_range</i>
+                    <input type="text" id="date" class="datepicker">
+                    <label for="date" class="white-text">Choose a date you need me for...</label>
+                </div>
+                <div class="input-field">
+                    <p>What genre of music do you prefer?
+                    </p>
+                    <div class="row">
+                        <div class="col s6 l6">
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Pop</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Rock</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Jazz</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Classical</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>R&B</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>EDM</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="col s6 l6">
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Country</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Reggae</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Latin</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>K-Pop</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Indie</span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Submit</a>
+                <div id="modal1" class="modal damn">
+                    <div class="modal-content white-text">
+                        <h4 class="bold">Thank You, Bitch!</h4>
+                        <p class="bitch">We greatly appreciate your effort in taking the time to share your thoughts and feedback with us. Your insights are incredibly valuable and help us to continuously improve our services and offerings. We are committed to providing you with the best possible experience, and your input plays a crucial role in guiding our efforts.</p>
+                        <p class="bitch">We deeply appreciate your engagement and look forward to serving you better in the future. Should you have any further suggestions or concerns, please do not hesitate to reach out. Your satisfaction is our top priority, and we are here to ensure that your needs are met and exceeded.</p>
+                    </div>
+                    <div class="modal-footer damn white-text">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container center">
+        <a class="waves-effect waves-light btn" onclick="scrollToTop()" class="center">Scroll To Top</a>
+        <br>
+        <br>
+    </div>
+
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5 class="footer-h5">About Me</h5>
+                    <p class="footer-p">I am a dedicated and passionate individual with a keen interest in technology, writing, and design. I enjoy exploring new ideas, solving complex problems, and collaborating with diverse teams. With a strong foundation in programming, communication, and creativity, I strive to contribute meaningfully to projects and organizations.</p>
+                    <p class="footer-p">Outside of work, I am passionate about reading, traveling, and volunteering. I believe in the power of lifelong learning and continuously seek opportunities to expand my knowledge and skills. I am excited to connect with like-minded individuals and contribute to innovative projects.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5 class="footer-h5">Connect</h5>
+                    <ul>
+                        <li><a href="https://www.facebook.com/aronlaynes.ferriol" class="grey-text text-lighten-3">Facebook</a></li>
+                        <li><a href="https://open.spotify.com/user/312f33ga5maexoimg3x6haeajemy?si=9a040c9b63f44aa5" class="grey-text text-lighten-3">Spotify</a></li>
+                        <li><a href="https://www.youtube.com/feed/you" class="grey-text text-lighten-3">Youtube</a></li>
+                        <li><a href="https://www.instagram.com/aronlaynesferriol/?hl=fi" class="grey-text text-lighten-3">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey text-darken-4">
+            <div class="container center-align black-text">&copy; 2024 Bitch Perfect</div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+            $('.modal').modal();
+        });
+    </script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+</body>
+</html>
